@@ -12,6 +12,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
+      - name: Zip Python Script
+        run: |
+          # Zip the Python script and any necessary files
+          zip -r simple-python-project.zip lambda_function.py
+
       - name: Setup Python
         uses: actions/setup-python@v2
         with:
