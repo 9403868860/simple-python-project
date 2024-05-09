@@ -31,5 +31,5 @@ jobs:
           AWS_EC2_METADATA_DISABLED: true
         run: |
           aws lambda update-function-code \
-            --function-name code \
+            --function-name python-project \
             --zip-file fileb://simple-python-project.zip
